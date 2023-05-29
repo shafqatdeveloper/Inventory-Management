@@ -1,0 +1,146 @@
+/*  Background Animatio */
+
+@keyframes move {
+  100% {
+    transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #3e1e68;
+  overflow: hidden;
+}
+
+.background span {
+  width: 50vmin;
+  height: 50vmin;
+  border-radius: 50vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 50;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.background span:nth-child(0) {
+  color: #654f8c;
+  top: 91%;
+  left: 6%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -20vw 5vh;
+  box-shadow: 100vmin 0 12.802938080300613vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #654f8c;
+  top: 87%;
+  left: 50%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 22vw 3vh;
+  box-shadow: 100vmin 0 12.99310160989998vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #a06464;
+  top: 78%;
+  left: 46%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -11vw 5vh;
+  box-shadow: 100vmin 0 12.81578320934119vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #fd2163;
+  top: 96%;
+  left: 25%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 13vw -2vh;
+  box-shadow: -100vmin 0 12.57147584671418vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #654f8c;
+  top: 74%;
+  left: 20%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 24vw -3vh;
+  box-shadow: 100vmin 0 12.841598129282964vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #654f8c;
+  top: 6%;
+  left: 40%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 10vw 21vh;
+  box-shadow: 100vmin 0 13.209949599413488vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #654f8c;
+  top: 58%;
+  left: 77%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -10vw -13vh;
+  box-shadow: 100vmin 0 12.997634733736483vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #654f8c;
+  top: 97%;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 12vw 7vh;
+  box-shadow: 100vmin 0 12.51174820633172vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #fd2163;
+  top: 23%;
+  left: 63%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -15vw -15vh;
+  box-shadow: 100vmin 0 12.688550136158483vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #fd2163;
+  top: 83%;
+  left: 7%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 18vw -12vh;
+  box-shadow: -100vmin 0 12.97896312768376vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #fd2163;
+  top: 24%;
+  left: 41%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: -10vw -18vh;
+  box-shadow: -100vmin 0 13.399071997547635vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #fd2163;
+  top: 30%;
+  left: 23%;
+  animation-duration: 6s;
+  animation-delay: -1s;
+  transform-origin: 0vw 10vh;
+  box-shadow: -100vmin 0 12.590806100102771vmin currentColor;
+}
+
+/* Background Animation End */
+
+/* Changing Input Fields Placeholders */
+
+.custom::placeholder {
+  color: rgb(255, 252, 252);
+}
