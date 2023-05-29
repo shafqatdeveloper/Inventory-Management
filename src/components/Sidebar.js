@@ -45,7 +45,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="flex z-10">
+    <div className="flex z-10 fixed left-0 top-0">
       <section className="flex gap-6">
         <div
           className={`bg-[#0e0e0e]  min-h-screen ${

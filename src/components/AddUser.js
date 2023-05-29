@@ -4,7 +4,7 @@ import "../App.css";
 const AddUser = () => {
   return (
     // Animated Background
-    <div className="w-full flex relative sm:flex-row h-screen bg-[#393131]">
+    <div className="w-full flex ml-16  relative sm:flex-row h-screen bg-[#393131]">
       <div class="background">
         <span></span>
         <span></span>

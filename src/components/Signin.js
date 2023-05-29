@@ -4,7 +4,7 @@ import "../App.css";
 const Signin = () => {
   return (
     // Animated Background
-    <div className="w-full flex relative sm:flex-row h-screen bg-[#d4cfcf]">
+    <div className="w-full flex relative ml-16 sm:flex-row h-screen">
       <div class="background">
         <span></span>
         <span></span>
