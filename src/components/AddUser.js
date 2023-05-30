@@ -4,8 +4,8 @@ import "../App.css";
 const AddUser = () => {
   return (
     // Animated Background
-    <div className="w-full flex ml-16  relative sm:flex-row h-screen bg-[#393131]">
-      <div class="background">
+    <div className="w-full  flex relative sm:flex-row h-screen bg-[#393131]">
+      <div class="background ml-16">
         <span></span>
         <span></span>
         <span></span>
@@ -21,8 +21,8 @@ const AddUser = () => {
       </div>
       <Sidebar />
       <div className="flex items-center justify-center w-full">
-        <div className="w-full sm:w-96 z-10 px-1 sm:px-0 h-full flex justify-center items-center">
-          <form className="bg-[#e7e4e4] gap-7 py-10 rounded-lg flex flex-col w-full items-center justify-center sm:ml-2 md:ml-5 p-3">
+        <div className="w-80 ml-16 sm:w-96 z-10 px-2 sm:px-0 h-full flex justify-center items-center">
+          <form className="bg-[#e7e4e4] gap-7 py-8 md:py-10 rounded-lg flex flex-col w-full items-center justify-center sm:ml-2 md:ml-5 p-3">
             <h1 className="text-2xl font-normal text-[#393838]">Add User</h1>
             <div className="flex gap-2 ">
               <div className="flex w-full  flex-col font-normal">
