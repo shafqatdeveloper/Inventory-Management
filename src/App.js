@@ -1,16 +1,14 @@
 import "./App.css";
-// import AddUser from "./components/AddUser.js";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Signin from "./components/Signin.js";
-import ManageProducts from "./components/ManageProducts.js";
-
+import Signin from "./Pages/Signin.js";
+import ManageProducts from "./Pages/ManageProducts.js";
+import "../node_modules/@flaticon/flaticon-uicons/css/all/all.css";
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
           {/* Specifying these routes temporarily Will Do it Accordingly */}
-          {/* <Route path="/" element={<AddUser />} /> */}
 
           <Route path="/" element={<ManageProducts />} />
           <Route path="/signin" element={<Signin />} />

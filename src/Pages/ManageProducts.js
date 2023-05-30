@@ -139,7 +139,7 @@ const ManageProducts = () => {
       name: "Product",
       selector: (row) => row.image,
       cell: (row) => (
-        <div className="flex items-center gap-1">
+        <div className="flex items-center gap-2">
           <img
             src={row.image}
             alt="Product"
@@ -148,20 +148,20 @@ const ManageProducts = () => {
           <h1>{row.name}</h1>
         </div>
       ),
-      width: "200px",
+      width: "280px",
       sortable: true,
     },
     {
       name: "Category",
       selector: (row) => row.category,
       sortable: true,
-      width: "150px",
+      width: "180px",
     },
     {
       name: "Quantity",
       selector: (row) => row.quantity,
       sortable: true,
-      width: "150px",
+      width: "180px",
     },
     {
       name: "Cost",
@@ -206,13 +206,13 @@ const ManageProducts = () => {
   const customStyles = {
     rows: {
       style: {
-        minHeight: "60px", // override the row height
-        fontSize: "14px",
+        minHeight: "69px", // override the row height
+        fontSize: "13px",
       },
     },
     headCells: {
       style: {
-        fontSize: "16px",
+        fontSize: "15px",
         fontWeight: "600",
       },
     },
@@ -268,11 +268,11 @@ const ManageProducts = () => {
 
         {/* Custom Filters */}
 
-        <div className="flex px-1 sm:px-4 md:px-5 mt-4 mb-7 sm:gap-4 items-center gap-2">
+        <div className="flex px-1 sm:px-4 md:px-5 mt-4 mb-7 sm:gap-10 items-center gap-2">
           <CgSortAz className="" size={29} />
           <select
             name="status"
-            className="border-[1px] border-gray-600 rounded-xl p-1 bg-black text-white "
+            className="border-[1px] border-gray-600 rounded-xl py-2 px-6 bg-black text-white "
             id="status"
           >
             <option value="Active">Active</option>
@@ -280,7 +280,7 @@ const ManageProducts = () => {
           </select>
           <select
             name="status"
-            className="border-[1px] border-gray-600 rounded-xl p-1 outline-none focus:outline-none bg-slate-100 text-gray-700"
+            className="border-[1px] border-gray-600 rounded-xl py-2 px-6 outline-none focus:outline-none bg-slate-100 text-gray-700"
             id="status"
           >
             <option value="">Category</option>
@@ -293,7 +293,7 @@ const ManageProducts = () => {
           </select>
           <select
             name="status"
-            className="border-[1px] border-gray-600 outline-none focus:outline-none rounded-xl p-1 bg-slate-100 text-gray-700 "
+            className="border-[1px] border-gray-600 outline-none focus:outline-none rounded-xl py-2 px-10 bg-slate-100 text-gray-700 "
             id="status"
           >
             <option value="">Price</option>
@@ -310,8 +310,6 @@ const ManageProducts = () => {
         <div className="px-2 sm:px-3 md:px-5">
           <DataTable
             pagination
-            fixedHeader
-            fixedHeaderScrollHeight="370px"
             columns={Column}
             data={products}
             selectableRows
