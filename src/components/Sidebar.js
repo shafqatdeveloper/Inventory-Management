@@ -45,7 +45,7 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="flex z-10 fixed left-0 top-0">
+    <div className="flex z-10 fixed bottom-0 left-0 top-0">
       <section className="flex gap-6">
         <div
           className={`bg-[#0e0e0e]  min-h-screen ${
@@ -59,7 +59,7 @@ const Sidebar = () => {
               onClick={() => setOpen(!open)}
             />
           </div>
-          <div className="relative flex flex-col gap-5">
+          <div className=" flex flex-col gap-5">
             {menus?.map((menu, index) => {
               return (
                 <Link

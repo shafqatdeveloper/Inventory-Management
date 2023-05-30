@@ -144,3 +144,25 @@
 .custom::placeholder {
   color: rgb(255, 252, 252);
 }
+
+/* Target the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 3px; /* Set the desired width */
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Set the color of the scrollbar handle */
+  border-radius: 4px; /* Set the border radius of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Set the color of the scrollbar handle on hover */
+}

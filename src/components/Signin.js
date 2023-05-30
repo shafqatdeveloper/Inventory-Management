@@ -4,7 +4,7 @@ import "../App.css";
 const Signin = () => {
   return (
     // Animated Background
-    <div className="w-full flex relative ml-16 sm:flex-row h-screen">
+    <div className="w-full flex relative sm:flex-row h-screen">
       <div class="background">
         <span></span>
         <span></span>
@@ -20,9 +20,9 @@ const Signin = () => {
         <span></span>
       </div>
       <Sidebar />
-      <div className="flex items-center justify-center w-full">
-        <div className="w-full sm:w-96 z-10 px-1 sm:px-0 h-full flex justify-center items-center">
-          <form className="bg-[#f0ebeb] gap-10 py-10 rounded-xl flex flex-col w-full items-center justify-center sm:ml-2 md:ml-5 p-3">
+      <div className="flex items-center ml-16 justify-center w-full">
+        <div className="w-72 sm:w-96 z-10 px-1 sm:px-0 h-full flex justify-center items-center">
+          <form className="bg-[#f0ebeb] gap-10 sm:py-10 py-4 rounded-xl flex flex-col w-full items-center justify-center sm:ml-2 md:ml-5 p-3">
             <h1 className="text-2xl font-normal text-[#393838]">Sign In</h1>
             <div className="flex w-full  flex-col font-normal">
               <label htmlFor="email" className="text-gray-500 pl-0.5">
