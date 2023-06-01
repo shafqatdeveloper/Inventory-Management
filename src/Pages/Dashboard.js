@@ -19,34 +19,36 @@ import {
 import { BiFilter } from "react-icons/bi";
 
 const Dashboard = () => {
-  // Products for Data Table
-  const products = [
-    {
-      id: "2KD-3RR",
-      name: "Air Jordan | Retro OG Chicago",
-      price: 2300,
-      size: `${38} | ${39} `,
-      pairs: 20,
-    },
-    {
-      id: "5PP-BFG",
-      name: "Air Jordan | Retro OG Dubai",
-      price: 4100,
-      size: `${42} | ${44} `,
-      pairs: 45,
-    },
-  ];
+  const mediaQueries = {
+    medium: `@media (max-width: 768px)`,
+    large: `@media (max-width: 1200px)`,
+    Xlarge: `@media (max-width: 1500px)`,
+    XXlarge: `@media (max-width: 1900px)`,
+  };
   //   Data Table Columns
   const Columns = [
     {
       name: "ID Number",
       selector: (row) => row.id,
-      width: "120px",
+      width: "130px",
     },
     {
       name: "Name",
       selector: (row) => row.name,
-      width: "300px",
+      style: {
+        [mediaQueries.medium]: {
+          width: "200px",
+        },
+        [mediaQueries.large]: {
+          width: "250px",
+        },
+        [mediaQueries.Xlarge]: {
+          width: "280px",
+        },
+        [mediaQueries.XXlarge]: {
+          width: "320px",
+        },
+      },
     },
     {
       name: "Size",
@@ -66,6 +68,23 @@ const Dashboard = () => {
       selector: (row) => row.pairs,
       sortable: true,
       width: "120px",
+    },
+  ];
+  // Products for Data Table
+  const products = [
+    {
+      id: "2KD-3RR",
+      name: "Air Jordan | Retro OG Chicago",
+      price: 2300,
+      size: `${38} | ${39} `,
+      pairs: 20,
+    },
+    {
+      id: "5PP-BFG",
+      name: "Air Jordan | Retro OG Dubai",
+      price: 4100,
+      size: `${42} | ${44} `,
+      pairs: 45,
     },
   ];
   //   Data For Line Chart
@@ -212,7 +231,7 @@ const Dashboard = () => {
       <div>
         <Sidebar />
       </div>
-      <div className="w-full gap-16 flex px-10">
+      <div className="w-full gap-12 flex px-10">
         {/* Left Chart With Invite People Option */}
         <div>
           <div className="py-3 flex flex-col gap-5">
@@ -320,7 +339,7 @@ const Dashboard = () => {
               <h1 className="text-gray-500 ">Welcome Back</h1>
             </div>
             <div className="flex items-center gap-6">
-              <button className="bg-black/80 flex items-center text-sm gap-1 text-[#fff] rounded-lg p-3">
+              <button className="bg-black/80 flex items-center text-sm gap-1 text-[#fff] rounded-lg p-[13px] ">
                 Add Items
                 <RiShoppingBasketLine
                   className="bg-white text-black rounded-full p-0.5"
@@ -328,8 +347,8 @@ const Dashboard = () => {
                 />
               </button>
               <div className="flex items-center gap-1">
-                <h1 className="bg-white/70 px-9 py-2 rounded-l-lg">Filters</h1>
-                <button className="bg-white/70 text-black px-2 py-2 rounded-r-lg">
+                <h1 className="bg-white/70 px-9 py-3 rounded-l-lg">Filters</h1>
+                <button className="bg-white/70 text-black px-2 py-3 rounded-r-lg">
                   <BiFilter size={24} />
                 </button>
               </div>
@@ -337,8 +356,8 @@ const Dashboard = () => {
           </div>
           {/* Income, Expenses and Bonus Charts */}
           <div className="grid py-5 grid-cols-3 gap-10">
-            <div className="relative flex rounded-xl p-2 bg-[#fff]">
-              <BsThreeDotsVertical className="absolute text-gray-500 right-3" />
+            <div className="relative flex rounded-xl p-2 xl:py-5 xl:px-4 2xl:py-10 bg-[#fff]">
+              <BsThreeDotsVertical className="absolute text-gray-500 top-2 xl:top-3 right-3" />
               <div>
                 <h1 className="text-gray-400">Total Income</h1>
                 <h1 className="text-2xl font-bold">4800K</h1>
@@ -364,8 +383,8 @@ const Dashboard = () => {
                 </RadialBarChart>
               </ResponsiveContainer>
             </div>
-            <div className="relative flex rounded-xl p-2 bg-[#fff]">
-              <BsThreeDotsVertical className="absolute text-gray-500 right-3" />
+            <div className="relative flex rounded-xl p-2 xl:py-5 xl:px-4 2xl:py-10 bg-[#fff]">
+              <BsThreeDotsVertical className="absolute text-gray-500 right-3 xl:top-3" />
               <div>
                 <h1 className="text-gray-400">Total Expense</h1>
                 <h1 className="text-2xl font-bold">7200K</h1>
@@ -391,8 +410,8 @@ const Dashboard = () => {
                 </RadialBarChart>
               </ResponsiveContainer>
             </div>
-            <div className="relative flex rounded-xl p-2 bg-[#fff]">
-              <BsThreeDotsVertical className="absolute text-gray-500 right-3" />
+            <div className="relative flex rounded-xl p-2 xl:py-5 xl:px-4 2xl:py-10 bg-[#fff]">
+              <BsThreeDotsVertical className="absolute text-gray-500 right-3 xl:top-3" />
               <div>
                 <h1 className="text-gray-400">Total Bonus</h1>
                 <h1 className="text-2xl font-bold">5600K</h1>
@@ -481,10 +500,10 @@ const Dashboard = () => {
                   />
                 </RadialBarChart>
               </ResponsiveContainer>
-              <h1 className="absolute bottom-[44%] text-gray-400 text-lg font-semibold left-[39%]">
+              <h1 className="absolute bottom-[44%] text-gray-400 text-lg font-semibold xl:left-[39%] 2xl:left-[45%] left-[35%]">
                 Orders
               </h1>
-              <h1 className="absolute bottom-[15%]  text-black text-3xl font-bold tracking-normal left-[34%]">
+              <h1 className="absolute bottom-[15%]  text-black text-3xl font-bold xl:left-[34%] 2xl:left-[39.5%] tracking-normal left-[34%]">
                 4500K
               </h1>
             </div>
