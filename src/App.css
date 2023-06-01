@@ -166,3 +166,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555; /* Set the color of the scrollbar handle on hover */
 }
+
+.custom-select {
+  /* Remove default arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  /* Add custom styling */
+  padding-right: 30px;
+  background-image: url("https://e7.pngegg.com/pngimages/550/928/png-clipart-computer-icons-iconfinder-symbol-apple-icon-format-filter-icon-angle-text-thumbnail.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right center;
+  /* Adjust the background image position as needed */
+}
