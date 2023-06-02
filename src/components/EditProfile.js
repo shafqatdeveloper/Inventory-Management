@@ -7,6 +7,7 @@ const EditProfile = () => {
       <h1 className="pt-3 text-2xl tracking-wide text-[#5f5e5e] font-semibold">
         Edit Profile
       </h1>
+      {/* Edit Profile Fields */}
       <div className="flex flex-col w-[35%]">
         <div className="flex py-5 justify-between ">
           <img
