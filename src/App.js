@@ -4,6 +4,7 @@ import Signin from "./Pages/Signin.js";
 // import ManageProducts from "./Pages/ManageProducts.js";
 import "../node_modules/@flaticon/flaticon-uicons/css/all/all.css";
 import Dashboard from "./Pages/Dashboard.js";
+import Profile from "./Pages/Profile.js";
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
 
           {/* <Route path="/" element={<ManageProducts />} /> */}
           <Route path="/" element={<Dashboard />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/signin" element={<Signin />} />
         </Routes>
       </BrowserRouter>

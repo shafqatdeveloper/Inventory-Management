@@ -180,3 +180,15 @@
   background-position: right center;
   /* Adjust the background image position as needed */
 }
+
+/* Hiding Input type Number Arrows */
+
+.hide::-webkit-inner-spin-button,
+.hide::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.hide {
+  -moz-appearance: textfield;
+}
